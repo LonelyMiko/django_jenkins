@@ -52,7 +52,7 @@ node {
         try {
             sh '''
                 source bin/activate
-                python django/app/manage.py jenkins --enable-coverage
+                python django/app/manage.py jenkins
                 deactivate
                '''
         }
