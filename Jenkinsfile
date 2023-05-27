@@ -51,7 +51,7 @@ node {
         def testsError = null
         try {
             sh '''
-                source ../bin/activate
+                source bin/activate
                 python django/app/manage.py jenkins
                 deactivate
                '''
