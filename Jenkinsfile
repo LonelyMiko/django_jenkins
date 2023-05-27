@@ -10,10 +10,9 @@ node {
 
     if (!installed) {
         stage("Install Python Virtual Enviroment") {
-            #!/bin/bash
             sh 'virtualenv --no-site-packages .'
         }
-    }   
+    }
     
     // The stage below is attempting to get the latest version of our application code.
     // Since this is a multi-branch project the 'checkout scm' command is used. If you're working with a standard 
