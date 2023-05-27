@@ -10,6 +10,7 @@ node {
 
     if (!installed) {
         stage("Install Python Virtual Enviroment") {
+            #!/bin/bash
             sh 'virtualenv --no-site-packages .'
         }
     }   
